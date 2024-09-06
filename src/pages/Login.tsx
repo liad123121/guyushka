@@ -10,11 +10,11 @@ const Login = () => {
   const handleOnLogin = () => {
     if (creds.username === "admin" && creds.password === "12345678") {
       setError(false);
+      localStorage.setItem("login", "true");
+      navigate("/home");
       return;
     }
     setError(true);
-    localStorage.setItem("login", "true");
-    navigate("/home");
   };
 
   return (
