@@ -8,7 +8,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleOnLogin = () => {
-    if (creds.username === "admin" && creds.password === "12345678") {
+    if (creds.username === "admin" && creds.password === "admin") {
       setError(false);
       localStorage.setItem("login", "true");
       navigate("/home");
